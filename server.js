@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-
 const posts = require('./server/routes/posts.js');
 
 
@@ -19,7 +18,7 @@ app.listen(port, (req,res)=>{
 	console.log('RUNNING on port ' + port);
 })
 // const http = require('http')
-// const fs = require('fs')
+// 
 // const port = 3000
 
 // const server = http.createServer(function(req, res){
