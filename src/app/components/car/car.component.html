@@ -1,19 +1,26 @@
+
 <div class="container">
 	<div class="navigation">
 		<div class="navigation__col">
-			<input class="navigation__button list" type="button" value="List" (click)="clickList()">
+			<input  class="navigation__button list" type="button" value="List" (click)="clickList()">
 		</div>
 		<div class="navigation__col" >
 			<input class="navigation__button add" type="button" value="Add" (click)="clickAdd()">
 		</div>
-		<div class="navigation__col">
-			<input class="navigation__button update" type="button" value="Update" (click)="clickUpdate()">
-		</div>
-		<div class="navigation__col">
-			<input class="navigation__button remove" type="button" value="Remove" (click)="clickRemove()">
-		</div>
 	</div>
-	<div class="catalogue" #catalogue>
+	<div class="catalogue " #catalogue>
 		
 	</div>
 </div>
+<jw-modal id="remove-modal">
+    <h1>Remove item?</h1>
+    <input class="submit" type="button" value="Submit" (click)="clickRemove()">
+</jw-modal>
+<jw-modal id="add-modal">
+    <h1>Add plate number.</h1>
+    <input class="submit" type="button" value="Submit" (click)="clickAdd()">
+</jw-modal>
+<jw-modal id="update-modal">
+    <h1>Update plate number.</h1>
+    <input class="submit" type="button" value="Submit" (click)="clickUpdate()">
+</jw-modal>
