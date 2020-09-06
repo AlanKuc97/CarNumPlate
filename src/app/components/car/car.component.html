@@ -12,15 +12,20 @@
 		
 	</div>
 </div>
-<jw-modal id="remove-modal">
+<jw-modal id="remove-modal" class="modal">
     <h1>Remove item?</h1>
-    <input class="submit" type="button" value="Submit" (click)="clickRemove()">
+    <input class="submit" type="button" value="Submit" (click)="submitRemove()">
 </jw-modal>
-<jw-modal id="add-modal">
-    <h1>Add plate number.</h1>
-    <input class="submit" type="button" value="Submit" (click)="clickAdd()">
+<jw-modal id="add-modal" class="modal">
+    <h1>Add plate number:</h1>
+    <input id="addName" type="text" placeholder="Name" >
+    <input id="addSurname" type="text" placeholder="Surname" >
+    <input id="addPlate" type="text" placeholder="Plate number" >
+    <input class="submit" type="button" value="Submit" (click)="submitAdd()">
 </jw-modal>
-<jw-modal id="update-modal">
-    <h1>Update plate number.</h1>
-    <input class="submit" type="button" value="Submit" (click)="clickUpdate()">
+<jw-modal id="update-modal" class="modal">
+    <h1>Update plate number:</h1>
+    <input id="Name" type="text" placeholder="Name" >
+    <input id="Surname" type="text" placeholder="Surname" >
+    <input class="submit" type="button" value="Submit" (click)="submitUpdate()">
 </jw-modal>

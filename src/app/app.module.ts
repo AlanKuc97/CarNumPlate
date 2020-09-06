@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CarComponent } from './components/car/car.component';
 //import {PopupModule} from 'ng2-opd-popup';
 import { ModalModule } from './_modal';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ModalModule } from './_modal';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ModalModule
     //PopupModule.forRoot(),
