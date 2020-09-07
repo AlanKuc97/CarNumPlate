@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Requirements
 
 Node: 12.18.3
+
 Angular CLI: 10.1.0
 
 ## How to run on localhost
