@@ -10,14 +10,14 @@ Angular CLI: 10.1.0
 
 ## How to run on localhost
 
-git clone https://github.com/AlanKuc97/CarNumPlate.git
+1. git clone https://github.com/AlanKuc97/CarNumPlate.git
 
-cd CarNumPlate
+2. cd CarNumPlate
 
-npm install
+3. npm install
 
-npm run build
+4. npm run build
 
-node server.js
+5. node server.js
 
-Open browser (tested on Safari and Chrome) on localhost:3000
+6. Open browser (tested on Safari and Chrome) on localhost:3000
