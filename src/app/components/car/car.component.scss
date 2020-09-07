@@ -1,4 +1,4 @@
-@mixin button-style{
+@mixin button-style($color, $colorHover){
 	min-width: 150px;
 	border: 0;
     line-height: 2.5;
@@ -8,7 +8,7 @@
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-   	background-color: rgba(0, 0, 220, 1);
+   	background-color: $color; 
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -16,7 +16,7 @@
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
     &:hover{
-        background-color: rgba(0, 0, 255, 1);
+        background-color: $colorHover;
     }
     &:active{
         box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
@@ -36,14 +36,13 @@
 		margin: 10px;
 	}
 	&__button{
-		@include button-style;
+		@include button-style(rgba(0, 0, 220, 1),rgba(0, 0, 255, 1));
 	}
 }
 
 .catalogue{
 	display: flex;
 	flex-direction:column;
-	//align-items:center;
 	font-size: 40px;
 	font-weight: 400px;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
@@ -52,16 +51,20 @@
 		justify-content:flex-end;
 		margin-bottom: 10px;
 	}
-	&__button{
-		@include button-style;
+	button{
 		margin: 0 10px;
+	}
+	&__button_edit{
+		@include button-style(rgba(0, 220, 0, 1),rgba(0, 255, 0, 1));
+	}
+	&__button_remove{
+		@include button-style(rgba(220, 0, 0, 1), rgba(255, 0, 0, 1));
 	}
 }
 
 .modal{
 	h1{
 		font-size: 15px;
-		//font-weight: 400px;
 	}
 	input{
 		margin-top: 10px;
@@ -70,7 +73,7 @@
 		border-radius: 10px;
 	}
 	.submit{
-		@include button-style;
+		@include button-style(rgba(0, 0, 220, 1), rgba(0, 0, 255, 1));
 		margin-left: 10px;
 	}
 }
